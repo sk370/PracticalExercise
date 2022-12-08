@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</head>
+
+<body>
+  <div class="testimonial-section">
+    <div class="inner-width">
+      <h1>What Client Says</h1>
+      <div class="border"></div>
+      <div class="sliders owl-carousel">
+        <div class="testimonial">
+          <div class="test-info">
+            <img class="test-pic" src="./1.jpeg" alt="">
+            <div class="test-name">
+              <span>Client1</span>
+              @Client
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quas harum iusto explicabo animi laudantium molestias perferendis ipsum culpa, fuga reiciendis totam inventore vel sunt voluptatibus? Corrupti deserunt eveniet tempora?</p>
+        </div>
+        
+        <div class="testimonial">
+          <div class="test-info">
+            <img class="test-pic" src="./2.webp" alt="">
+            <div class="test-name">
+              <span>Client2</span>
+              @Client2
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quas harum iusto explicabo animi laudantium molestias perferendis ipsum culpa, fuga reiciendis totam inventore vel sunt voluptatibus? Corrupti deserunt eveniet tempora?</p>
+        </div>
+
+        <div class="testimonial">
+          <div class="test-info">
+            <img class="test-pic" src="./3.jpg" alt="">
+            <div class="test-name">
+              <span>Client3</span>
+              @Client3
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quas harum iusto explicabo animi laudantium molestias perferendis ipsum culpa, fuga reiciendis totam inventore vel sunt voluptatibus? Corrupti deserunt eveniet tempora?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        680: {
+          items: 2
+        },
+        960: {
+          items: 3
+        }
+      }
+    }
+    )
+  </script>
+</body>
+</html>

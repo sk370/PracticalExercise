@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+  <div class="bussiness-card middle">
+    <div class="front">
+      <h2>Shuichi Akai</h2>
+      <span>Web Designer</span>
+      <ul class="contact-info">
+        <li>
+          <i class="fas fa-mobile-alt"></i>+8313087515838
+        </li>
+        <li>
+          <i class="far fa-envelope"></i>1412409011@qq.com
+        </li>
+        <li>
+          <i class="fas fa-map-marker-alt"></i>Xi'an China
+        </li>
+      </ul>
+    </div>
+    <div class="back">
+      <span>SK370</span>
+    </div>
+  </div>
+  <script>
+    $(".bussiness-card").click(function () {
+      $(".bussiness-card").toggleClass("bussiness-card-active");
+    })
+  </script>
+</body>
+
+</html>
