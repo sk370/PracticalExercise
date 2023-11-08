@@ -1,0 +1,214 @@
+{
+	"endpoint": "opc.tcp://10.22.0.239:49320",
+	"user": [],
+	"samplingInterval": 1000.0,
+	"subscription": [
+		{
+			"channel": "101_CPJ_AQ01",
+			"device": "AQ01",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ02",
+			"device": "AQ02",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ03",
+			"device": "AQ03",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ04",
+			"device": "AQ04",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ05",
+			"device": "AQ05",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ06",
+			"device": "AQ06",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ07",
+			"device": "AQ07",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ08",
+			"device": "AQ08",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ09",
+			"device": "AQ09",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ10",
+			"device": "AQ10",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_AQ11",
+			"device": "AQ11",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ01",
+			"device": "BQ01",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ02",
+			"device": "BQ02",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ03",
+			"device": "BQ03",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ04",
+			"device": "BQ04",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ05",
+			"device": "BQ05",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ06",
+			"device": "BQ06",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ07",
+			"device": "BQ07",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ08",
+			"device": "BQ08",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ09",
+			"device": "BQ09",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ10",
+			"device": "BQ10",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ11",
+			"device": "BQ11",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		},
+		{
+			"channel": "101_CPJ_BQ12",
+			"device": "BQ12",
+			"namespace": 2,
+			"suffixs": [
+				"Equip.CPEqIn_AutoHandShark",
+				"Equip.CPEqIn_BtnHandShark"
+			]
+		}
+	]
+}
