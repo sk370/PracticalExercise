@@ -1,109 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sk370.opcua.mapper.NodeStructureMapper">
+<mapper namespace="com.sk370.opcua.mapper.VirtualMachineMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.sk370.opcua.entity.NodeStructure">
+    <resultMap id="BaseResultMap" type="com.sk370.opcua.entity.VirtualMachine">
         <result column="id" property="id"/>
-        <result column="namespace_index" property="namespaceIndex"/>
-        <result column="identifier" property="identifier"/>
-        <result column="node_class" property="nodeClass"/>
-        <result column="browse_name" property="browseName"/>
-        <result column="display_name" property="displayName"/>
-        <result column="parent_identifier" property="parentIdentifier"/>
-        <result column="level" property="level"/>
+        <result column="equip_no" property="equipNo"/>
+        <result column="equip_name" property="equipName"/>
+        <result column="rotate_speed" property="rotateSpeed"/>
+        <result column="temperature" property="temperature"/>
+        <result column="create_time" property="createTime"/>
+        <result column="created_by" property="createdBy"/>
+        <result column="updated_time" property="updatedTime"/>
+        <result column="updated_by" property="updatedBy"/>
     </resultMap>
-
 
     <!-- 保存或更新 -->
     <insert id="saveOrUpdate">
-        INSERT INTO node_structure(
-			id,
-			namespace_index,
-			identifier,
-			node_class,
-			browse_name,
-			display_name,
-			parent_identifier,
-			level) VALUES
-            (
-			#{nodeStructure.id},
-			#{nodeStructure.namespaceIndex},
-			#{nodeStructure.identifier},
-			#{nodeStructure.nodeClass},
-			#{nodeStructure.browseName},
-			#{nodeStructure.displayName},
-			#{nodeStructure.parentIdentifier},
-			#{nodeStructure.level}
-		)ON duplicate KEY UPDATE
-			namespace_index = VALUES(namespace_index),
-			identifier = VALUES(identifier),
-			browse_name = VALUES(browse_name),
-			display_name = VALUES(display_name),
-			parent_identifier = VALUES(parent_identifier),
-			level = VALUES(level)
+        INSERT INTO virtual_machine(
+        id,
+        equip_no,
+        equip_name,
+        rotate_speed,
+        temperature,
+        create_time,
+        created_by,
+        updated_time,
+        updated_by) VALUES
+        (
+        #{virtualMachine.id},
+        #{virtualMachine.equipNo},
+        #{virtualMachine.equipName},
+        #{virtualMachine.rotateSpeed},
+        #{virtualMachine.temperature},
+        #{virtualMachine.createTime},
+        #{virtualMachine.createdBy},
+        #{virtualMachine.updatedTime},
+        #{virtualMachine.updatedBy}
+        )ON duplicate KEY UPDATE
+        equip_no = VALUES(equipNo),
+        equip_name = VALUES(rotateSpeed),
+        rotate_speed = VALUES(browse_name),
+        temperature = VALUES(temperature),
+        create_time = VALUES(createTime),
+        created_by = VALUES(createdBy),
+        updated_time = VALUES(updatedTime),
+        updated_by = VALUES(updatedBy)
     </insert>
 
     <!-- 批量保存 -->
     <insert id="batchSave">
-        INSERT INTO node_structure(
+        INSERT INTO virtual_machine(
         id,
-        namespace_index,
-        identifier,
-        node_class,
-        browse_name,
-        display_name,
-        parent_identifier,
-        level) VALUES
-        <foreach collection="nodeStructureList" item="nodeStructure" separator=",">
+        equip_no,
+        equip_name,
+        rotate_speed,
+        temperature,
+        create_time,
+        created_by,
+        updated_time,
+        updated_by) VALUES
+        <foreach collection="virtualMachineList" item="virtualMachine" separator=",">
             (
-            #{nodeStructure.id},
-            #{nodeStructure.namespaceIndex},
-            #{nodeStructure.identifier},
-            #{nodeStructure.nodeClass},
-            #{nodeStructure.browseName},
-            #{nodeStructure.displayName},
-            #{nodeStructure.parentIdentifier},
-            #{nodeStructure.level}
+            #{virtualMachine.id},
+            #{virtualMachine.equipNo},
+            #{virtualMachine.equipName},
+            #{virtualMachine.rotateSpeed},
+            #{virtualMachine.temperature},
+            #{virtualMachine.createTime},
+            #{virtualMachine.createdBy},
+            #{virtualMachine.updatedTime},
+            #{virtualMachine.updatedBy}
             )
         </foreach>
     </insert>
 
     <!-- 批量保存或更新 -->
     <insert id="batchSaveOrUpdate">
-        INSERT INTO node_structure(
+        INSERT INTO virtual_machine(
         id,
-        namespace_index,
-        identifier,
-        node_class,
-        browse_name,
-        display_name,
-        parent_identifier,
-        level) VALUES
-        <foreach collection="nodeStructureList" item="nodeStructure" separator=",">
+        equip_no,
+        equip_name,
+        rotate_speed,
+        temperature,
+        create_time,
+        created_by,
+        updated_time,
+        updated_by) VALUES
+        <foreach collection="virtualMachineList" item="virtualMachine" separator=",">
+
             (
-            #{nodeStructure.id},
-            #{nodeStructure.namespaceIndex},
-            #{nodeStructure.identifier},
-            #{nodeStructure.nodeClass},
-            #{nodeStructure.browseName},
-            #{nodeStructure.displayName},
-            #{nodeStructure.parentIdentifier},
-            #{nodeStructure.level}
+            #{virtualMachine.id},
+            #{virtualMachine.equipNo},
+            #{virtualMachine.equipName},
+            #{virtualMachine.rotateSpeed},
+            #{virtualMachine.temperature},
+            #{virtualMachine.createTime},
+            #{virtualMachine.createdBy},
+            #{virtualMachine.updatedTime},
+            #{virtualMachine.updatedBy}
             )
         </foreach>
         ON duplicate KEY UPDATE
-        namespace_index = VALUES(namespace_index),
-        identifier = VALUES(identifier),
-        node_class = VALUES(node_class),
-        browse_name = VALUES(browse_name),
-        display_name = VALUES(display_name),
-        parent_identifier = VALUES(parent_identifier),
-        level = VALUES(level)
+        equip_no = VALUES(equipNo),
+        equip_name = VALUES(rotateSpeed),
+        rotate_speed = VALUES(browse_name),
+        temperature = VALUES(temperature),
+        create_time = VALUES(createTime),
+        created_by = VALUES(createdBy),
+        updated_time = VALUES(updatedTime),
+        updated_by = VALUES(updatedBy)
     </insert>
 
-    <select id="selectAll" resultType="com.sk370.opcua.entity.NodeStructure">
-		select * from node_structure
-	</select>
+    <select id="selectAll" resultType="com.sk370.opcua.entity.VirtualMachine">
+        select * from virtual_machine
+    </select>
 </mapper>

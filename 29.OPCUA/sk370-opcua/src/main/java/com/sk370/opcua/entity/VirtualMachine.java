@@ -1,24 +1,33 @@
-package zyq.opcmilo.client.pojo.entity;
+package com.sk370.opcua.entity;
 
-import jakarta.persistence.*;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
 
-@Entity
 @Data
-//@Table(name = "VirtualMachine")
+@ToString(callSuper = true)
+@TableName("virtual_machine")
 public class VirtualMachine implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
-    private String EquipNo;
-    private String EquipName;
-    private Integer RotateSpeed;
-    private Float Temperature;
-    private Timestamp CreatedTime;
-    private String CreatedBy;
-    private Timestamp UpdatedTime;
-    private String UpdatedBy;
+    @TableField("id")
+    private Integer id;
+    @TableField("equip_no")
+    private String equipNo;
+    @TableField("equip_name")
+    private String equipName;
+    @TableField("rotate_speed")
+    private Integer rotateSpeed;
+    @TableField("temperature")
+    private Float temperature;
+    @TableField("create_time")
+    private Timestamp createTime;
+    @TableField("created_by")
+    private String createdBy;
+    @TableField("updated_time")
+    private Timestamp updatedTime;
+    @TableField("updated_by")
+    private String updatedBy;
 }

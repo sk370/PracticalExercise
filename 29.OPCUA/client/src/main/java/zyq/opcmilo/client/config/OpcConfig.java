@@ -1,16 +1,15 @@
-package com.xxmes.opcapp.config;
+package zyq.opcmilo.client.config;
 
-import cn.hutool.core.io.resource.ClassPathResource;
-import com.xxmes.opcapp.context.OpcInitContextRefreshedListener;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.annotation.PostConstruct;
+import zyq.opcmilo.client.context.OpcInitContextRefreshedListener;
+import zyq.opcmilo.client.repository.VirtualMachineRepository;
 
 @Configuration
 public class OpcConfig {
-    @Bean
-    public OpcInitContextRefreshedListener myContextRefreshedListener() {
-        return new OpcInitContextRefreshedListener();
-    }
+//    @Bean
+//    public OpcInitContextRefreshedListener myContextRefreshedListener() {
+//        return new OpcInitContextRefreshedListener();
+//    }
 }
