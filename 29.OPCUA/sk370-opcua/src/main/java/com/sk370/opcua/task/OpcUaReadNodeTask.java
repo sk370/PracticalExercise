@@ -26,7 +26,7 @@ import java.util.List;
 
 
 /**
- * @author yugo
+ * @author sk370
  */
 @Component
 @Slf4j
@@ -121,6 +121,4 @@ public class OpcUaReadNodeTask {
             e.printStackTrace();
         }
     }
-
-
 }

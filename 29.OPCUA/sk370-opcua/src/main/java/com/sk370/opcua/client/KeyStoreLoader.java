@@ -15,7 +15,9 @@ import java.security.cert.X509Certificate;
 import java.util.regex.Pattern;
 
 /**
- * @author yugo
+ * opcua证书生成类（无须改动）
+ *
+ * @author sk370
  */
 public class KeyStoreLoader {
 

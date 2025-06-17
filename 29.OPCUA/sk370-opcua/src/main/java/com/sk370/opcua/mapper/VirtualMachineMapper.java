@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Mapper
  *
- * @author yugo
+ * @author sk370
  * 2019-07-03
  */
 public interface VirtualMachineMapper extends BaseMapper<VirtualMachine> {
@@ -19,7 +19,7 @@ public interface VirtualMachineMapper extends BaseMapper<VirtualMachine> {
      * 保存或更新
      *
      * @param virtualMachine 节点结构
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     void saveOrUpdate(@Param("virtualMachine") VirtualMachine virtualMachine);
@@ -28,7 +28,7 @@ public interface VirtualMachineMapper extends BaseMapper<VirtualMachine> {
      * 批量保存
      *
      * @param virtualMachineList 节点结构集合
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     void batchSave(@Param("virtualMachineList") List<VirtualMachine> virtualMachineList);
@@ -37,7 +37,7 @@ public interface VirtualMachineMapper extends BaseMapper<VirtualMachine> {
      * 批量保存或更新
      *
      * @param virtualMachineList 节点结构集合
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     void batchSaveOrUpdate(@Param("nodeStructureList") List<VirtualMachine> virtualMachineList);
@@ -46,7 +46,7 @@ public interface VirtualMachineMapper extends BaseMapper<VirtualMachine> {
      * 查询所有节点
      *
      * @return List
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     List<VirtualMachine> selectAll();

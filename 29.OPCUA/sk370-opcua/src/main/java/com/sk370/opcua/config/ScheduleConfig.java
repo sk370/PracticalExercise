@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 
 
 /**
- * @author yugo
+ * @author sk370
  */
 @Configuration
 public class ScheduleConfig implements SchedulingConfigurer {

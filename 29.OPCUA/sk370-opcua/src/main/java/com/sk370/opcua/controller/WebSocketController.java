@@ -10,13 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 
-/**
- * @author yugo
- */
 @Controller
 @RequestMapping("/websocket")
 public class WebSocketController {
-
 
     @GetMapping("/index")
     public ModelAndView socket() {

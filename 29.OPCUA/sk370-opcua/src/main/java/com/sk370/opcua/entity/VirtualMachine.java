@@ -8,6 +8,11 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
+/**
+ * 用于kepserverex的对象访问实体类。生产环境中，可根据业务场景的访问内容进行修改。
+ *
+ * @author sk370
+ */
 @Data
 @ToString(callSuper = true)
 @TableName("virtual_machine")

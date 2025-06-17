@@ -17,7 +17,7 @@ spring:
     host: 117.72.38.236
     port: 6379
     timeout: 20000
-    password:
+    password: 123456
     jedis:
       pool:
         max-active: 20
@@ -37,9 +37,10 @@ spring:
 
 opcua:
   #kepware
-  endpoint-url: opc.tcp://192.168.56.102:49320
+#  endpoint-url: opc.tcp://192.168.56.102:49320
   # simulation
-#  endpoint-url: opc.tcp://192.168.56.102:53530/OPCUA/SimulationServer
+  endpoint-url: opc.tcp://192.168.56.102:53530/OPCUA/SimulationServer
+#  endpoint-url: opc.tcp://192.168.56.102:53530
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml

@@ -26,7 +26,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 /**
- * @author yugo
+ * @author sk370
  */
 @Component
 @Slf4j

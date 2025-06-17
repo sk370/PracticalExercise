@@ -1,7 +1,7 @@
 package com.sk370.opcua.constant;
 
 /**
- * @author yugo
+ * @author sk370
  */
 public class RedisKeyConstants {
 

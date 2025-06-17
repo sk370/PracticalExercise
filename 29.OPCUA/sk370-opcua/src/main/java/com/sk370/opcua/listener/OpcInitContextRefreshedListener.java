@@ -1,6 +1,5 @@
 package com.sk370.opcua.listener;
 
-
 import com.sk370.opcua.config.OpcInitSubscriptionConfig;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

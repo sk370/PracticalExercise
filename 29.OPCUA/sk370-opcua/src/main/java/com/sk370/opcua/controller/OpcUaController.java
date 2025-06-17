@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * @author yugo
- */
 @RestController
 @RequestMapping("/opc-ua")
 @Api(value = "opcua 协议接口", tags = "opcua 信息模型查看接口")
@@ -57,6 +54,10 @@ public class OpcUaController {
         }
     }
 
+    /**
+     * 浏览节点，输出到控制台
+     * @return
+     */
     @GetMapping("/browse/node")
     public String browseNode() {
         try {

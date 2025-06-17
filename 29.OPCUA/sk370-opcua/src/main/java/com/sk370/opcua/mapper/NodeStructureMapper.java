@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Mapper
  *
- * @author yugo
+ * @author sk370
  * 2019-07-03
  */
 public interface NodeStructureMapper extends BaseMapper<NodeStructure> {
@@ -18,7 +18,7 @@ public interface NodeStructureMapper extends BaseMapper<NodeStructure> {
      * 保存或更新
      *
      * @param nodeStructure 节点结构
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     void saveOrUpdate(@Param("nodeStructure") NodeStructure nodeStructure);
@@ -27,7 +27,7 @@ public interface NodeStructureMapper extends BaseMapper<NodeStructure> {
      * 批量保存
      *
      * @param nodeStructureList 节点结构集合
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     void batchSave(@Param("nodeStructureList") List<NodeStructure> nodeStructureList);
@@ -36,7 +36,7 @@ public interface NodeStructureMapper extends BaseMapper<NodeStructure> {
      * 批量保存或更新
      *
      * @param nodeStructureList 节点结构集合
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     void batchSaveOrUpdate(@Param("nodeStructureList") List<NodeStructure> nodeStructureList);
@@ -45,7 +45,7 @@ public interface NodeStructureMapper extends BaseMapper<NodeStructure> {
      * 查询所有节点
      *
      * @return List
-     * @author yugo
+     * @author sk370
      * 2019-07-03
      */
     List<NodeStructure> selectAll();

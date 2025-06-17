@@ -1,6 +1,5 @@
 package com.sk370.opcua.entity;
 
-import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
@@ -8,10 +7,9 @@ import lombok.ToString;
 import org.eclipse.milo.opcua.stack.core.types.enumerated.NodeClass;
 
 /**
- * entity
+ * opcua协议数据结构实体，与数据库中的字段对应
  *
- * @author yugo
- * 2019-07-03
+ * @author sk370
  */
 @Data
 @ToString(callSuper = true)

@@ -6,7 +6,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author yugo
+ * OPCUA协议数据节点的状态实体
+ *
+ * @author sk370
  */
 @Data
 public class ServerStatusDTO implements Serializable {
@@ -18,6 +20,4 @@ public class ServerStatusDTO implements Serializable {
     private Date currentTime;
 
     private String state;
-
-
 }

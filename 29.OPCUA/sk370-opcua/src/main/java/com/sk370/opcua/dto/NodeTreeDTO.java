@@ -7,7 +7,9 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author yugo
+ * opcua协议数据结构序列化实体
+ *
+ * @author sk370
  */
 @Data
 public class NodeTreeDTO implements Serializable {

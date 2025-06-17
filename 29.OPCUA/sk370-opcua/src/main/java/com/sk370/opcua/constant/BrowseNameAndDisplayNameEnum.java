@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author yugo
+ * @author sk370
  */
 public enum BrowseNameAndDisplayNameEnum {
 

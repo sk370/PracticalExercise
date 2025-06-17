@@ -5,7 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author yugo
+ * Prosys OPC UA Simulation Server软件中配置的调试节点实体
+ *
+ * @author sk370
  */
 @Data
 public class SimulationDTO implements Serializable {
