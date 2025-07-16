@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-08a0dc40\",\"path\":\"/javaframe/02.Spring5.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"02.第1章 Spring概述\",\"slug\":\"_02-第1章-spring概述\",\"children\":[{\"level\":3,\"title\":\"1.1 Spring框架介绍\",\"slug\":\"_1-1-spring框架介绍\",\"children\":[]},{\"level\":3,\"title\":\"1.2 Spring5.2下载\",\"slug\":\"_1-2-spring5-2下载\",\"children\":[]},{\"level\":3,\"title\":\"1.3 体验spring创建对象\",\"slug\":\"_1-3-体验spring创建对象\",\"children\":[]}]},{\"level\":2,\"title\":\"第2章 IoC及IoC操作\",\"slug\":\"第2章-ioc及ioc操作\",\"children\":[{\"level\":3,\"title\":\"2.1 IoC简述\",\"slug\":\"_2-1-ioc简述\",\"children\":[]},{\"level\":3,\"title\":\"2.2 基于xml操作——Bean管理\",\"slug\":\"_2-2-基于xml操作——bean管理\",\"children\":[]},{\"level\":3,\"title\":\"2.3 基于注解操作——Bean管理\",\"slug\":\"_2-3-基于注解操作——bean管理\",\"children\":[]}]},{\"level\":2,\"title\":\"第3章 Aop\",\"slug\":\"第3章-aop\",\"children\":[{\"level\":3,\"title\":\"3.1 Aop介绍\",\"slug\":\"_3-1-aop介绍\",\"children\":[]},{\"level\":3,\"title\":\"3.2 Aop操作\",\"slug\":\"_3-2-aop操作\",\"children\":[]}]},{\"level\":2,\"title\":\"第4章 Jdbc Template\",\"slug\":\"第4章-jdbc-template\",\"children\":[{\"level\":3,\"title\":\"4.1 Jdbc Template介绍\",\"slug\":\"_4-1-jdbc-template介绍\",\"children\":[]},{\"level\":3,\"title\":\"4.2 Jdbc Template对象的使用——操作数据库\",\"slug\":\"_4-2-jdbc-template对象的使用——操作数据库\",\"children\":[]},{\"level\":3,\"title\":\"4.3 Jdbc Template批量操作数据库\",\"slug\":\"_4-3-jdbc-template批量操作数据库\",\"children\":[]},{\"level\":3,\"title\":\"4.4 事务操作\",\"slug\":\"_4-4-事务操作\",\"children\":[]},{\"level\":3,\"title\":\"4.5 完全注解开发\",\"slug\":\"_4-5-完全注解开发\",\"children\":[]}]},{\"level\":2,\"title\":\"第5章 Spring5 新功能\",\"slug\":\"第5章-spring5-新功能\",\"children\":[{\"level\":3,\"title\":\"5.0 新功能介绍\",\"slug\":\"_5-0-新功能介绍\",\"children\":[]},{\"level\":3,\"title\":\"5.1 整合Log4j2日志框架\",\"slug\":\"_5-1-整合log4j2日志框架\",\"children\":[]},{\"level\":3,\"title\":\"5.2 核心容器支持@Nullable注解\",\"slug\":\"_5-2-核心容器支持-nullable注解\",\"children\":[]},{\"level\":3,\"title\":\"5.3 核心容器支持函数式风格（GenericApplicationContext)\",\"slug\":\"_5-3-核心容器支持函数式风格-genericapplicationcontext\",\"children\":[]},{\"level\":3,\"title\":\"5.4 整合JUnit4\",\"slug\":\"_5-4-整合junit4\",\"children\":[]},{\"level\":3,\"title\":\"5.5 整合JUnit5\",\"slug\":\"_5-5-整合junit5\",\"children\":[]},{\"level\":3,\"title\":\"5.6 SpringWebflux\",\"slug\":\"_5-6-springwebflux\",\"children\":[]}]}],\"readingTime\":{\"minutes\":47.02,\"words\":14105},\"filePathRelative\":\"javaframe/02.Spring5.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

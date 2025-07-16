@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as t,c as o,a as r}from"./app.b5795010.js";var _="/images/\u6731\u5B87\u7426\u4E2A\u4EBA\u7B80\u53862.jpeg";const a={},s=r("img",{src:_,width:"60%"},null,-1),c=[s];function n(i,l){return t(),o("div",null,c)}var f=e(a,[["render",n],["__file","about.html.vue"]]);export{f as default};
